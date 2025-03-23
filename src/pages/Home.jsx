@@ -6,9 +6,9 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleJoin = () => {
-    if (input.trim()) {
+    
       navigate(`/room/${input}`);
-    }
+    
   };
 
   return (
@@ -34,7 +34,7 @@ const Home = () => {
             placeholder="Enter Room ID"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="w-full p-3 text-lg bg-gray-900 text-green-300 placeholder-green-500 rounded-xl border border-green-400 focus:outline-none focus:ring-4 focus:ring-green-400 transition-all shadow-md shadow-green-500/20"
+            className="w-full p-3 text-lg bg-gray-900 text-green-300 placeholder-green-500 rounded-xl border border-green-400 focus:outline-none focus:ring-4 focus:ring-green-400 transition-all shadow-md shadow-green-500/20 z-100"
           />
 
           {/* Join Button */}
