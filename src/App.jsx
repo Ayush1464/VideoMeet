@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import VideoRoom from "./pages/VideoRoom";
 import Navbar from "./pages/NavBar";
 import Ayush from "./pages/Ayush";
+import Dummy from "./pages/dummy";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/room/:roomID" element={<VideoRoom />} />
         <Route path="/ayush" element={<Ayush />} />
+        <Route path="/dummy" element={<Dummy />} />
       </Routes>
     </div>
   );
